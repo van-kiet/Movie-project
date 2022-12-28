@@ -1,0 +1,152 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    h1 {
+        color: white;
+        text-transform: uppercase;
+        padding: 25px 0;
+      }
+    .background {
+        background-image: url("../../../public/images/bgmovie.jpg"),;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+    }
+    
+  }
+  .tittle {
+    color: #ff9800;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+  }
+  label {
+    color: white;
+    margin-right: 5px;
+  }
+  label span {
+    color: red;
+  }
+  .input {
+    background: none;
+  }
+  .seat_type {
+    padding-bottom: 30px;
+  }
+  .seat_type li {
+    color: white;
+    list-style: none;
+    display: inline;
+    margin-right: 60px;
+  }
+  .greenBox::before {
+    content: "";
+    background: rgb(92, 92, 92);
+  }
+  .redBox::before {
+    content: "";
+    background: yellow;
+  }
+  .emptyBox::before {
+    content: "";
+    box-shadow: inset 0px 2px 3px 0px rgb(225, 175, 101),
+      0px 1px 0px 0px rgb(255 255 255 / 80%);
+    background: white;
+  }
+  .smallBox::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .tittle {
+    color: #ff9800;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+  }
+  .seat {
+    width: 2px;
+    height: 2px;
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+  }
+  .tb {
+    color: #ff9800;
+    
+    
+  }
+  .confirm {
+    margin: 15px;
+  }
+  .chair {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  
+    &.number {
+      background: transparent;
+      color: yellow;
+    }
+  
+    &.booked {
+      background: rgb(92, 92, 92);
+    }
+  
+    &.available {
+      background: rgb(236, 236, 236);
+    }
+  
+    &.selected {
+      background: yellow;
+    }
+    
+  }
+  
+  tr {
+    margin-left: 50px;
+    th{
+      background-color: white;
+     padding: 10px 40px;
+     border: 1px solid black;
+    }
+    td{
+      background-color: #ff9800;
+      padding: 5px 0;
+      border: 1px solid black;
+    }
+  }
+  .bill{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+   
+  }
+  .tbc{
+    overflow-y: auto;
+   
+    height: 600px;
+  }
+  .tfoot{
+    height: 10px;
+  }
+  .billBig{
+    padding-top: 215px;
+  }
+  
+  

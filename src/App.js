@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BaiTapVePhim from "./components/BaiTapVePhim/BaiTapVePhim";
+import BaiTapDatGhe from "./components/BaiTapDatGhe/BaiTapDatGhe";
 
 function App() {
   return (
     <div className="App">
-      <BaiTapVePhim />
+      <BaiTapDatGhe />
     </div>
   );
 }
