@@ -1,4 +1,5 @@
 import data from "../../data/danhSachGhe.json";
+import { BOOK_CHAIR, UPDATE_CHAIR } from "../types/chairType";
 const DEFAULT_STATE = {
   ChairData: data,
   SelectedChair: [],
@@ -6,7 +7,7 @@ const DEFAULT_STATE = {
 export const movieReducer = (state = DEFAULT_STATE, action) => {
   const { type, payload } = action;
   switch (type) {
-    case "UPDATE_CHAIR":
+    case UPDATE_CHAIR:
       const { index, idx } = payload;
       const data = [...state.ChairData];
       const idxdata = JSON.parse(JSON.stringify(state.SelectedChair));
@@ -40,7 +41,7 @@ export const movieReducer = (state = DEFAULT_STATE, action) => {
       state.SelectedChair = idxdata;
       state.ChairData = data;
       break;
-    case "BOOK_CHAIR": {
+    case BOOK_CHAIR: {
       const data = [...state.ChairData];
       const idxdata = [...state.SelectedChair];
       for (let i in idxdata) {

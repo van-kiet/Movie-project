@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { updateChairAction } from "../../store/actions/chairAction";
 
 class Chair extends Component {
   mappingClass = () => {
@@ -21,10 +22,7 @@ class Chair extends Component {
     }
   };
   updateChair = (index, idx) => {
-    this.props.dispatch({
-      type: "UPDATE_CHAIR",
-      payload: { index, idx },
-    });
+    this.props.dispatch(updateChairAction({ index, idx }));
   };
   render() {
     return (

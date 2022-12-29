@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { bookChairAction } from "../../store/actions/chairAction";
 
 class Bill extends Component {
   renderBill = () => {
@@ -34,9 +35,8 @@ class Bill extends Component {
     return sum;
   };
   bookChair = () => {
-    this.props.dispatch({
-      type: "BOOK_CHAIR",
-    });
+    this.props.dispatch(bookChairAction());
+    alert("Đặt ghế thành công !");
     this.totalMoney();
   };
   render() {
